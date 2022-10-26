@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(6, 6, 6);
 }
@@ -20,7 +23,7 @@ div{
 }
 .hidden{
     opacity: 0;
-    transition: all 1s;
+    transition: all 3s;
 }
 .show{
     opacity: 1;
@@ -87,13 +90,13 @@ div{
     top: 460px;
 }
 
-.aboutbox{
+#aboutbox{
     align-self: center;
     position: relative;
     height: 750px;
     width: 70%;
 }
-.aboutbox .picbox{
+#aboutbox .picbox{
     width: 50%;
     height: 40%;
     background-color: grey;
@@ -101,7 +104,7 @@ div{
     left: 0;
     top: 200px;
 }
-.aboutbox h1{
+#aboutbox h1{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
@@ -113,7 +116,7 @@ div{
     border-bottom: #3b3c36 solid .50px;
 
 }
-.aboutbox h2{
+#aboutbox h2{
     color: rgb(200, 200, 200);
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
