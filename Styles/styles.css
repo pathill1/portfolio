@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(6, 6, 6);
+}
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+div{
+    color: black;
+}
+.site{
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+
+/*top navigation*/
+.topNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    overflow: hidden;
+    z-index: 99;
+    transition: top 0.4s;
+}
+.topNav .topNavBorder{
+    position : absolute;
+    width: 75%;
+    top: 41.5px;
+    left: 11.5%;
+    height: .75px;
+    border-bottom: #3b3c36 solid .50px;
+}
+.topNav a{
+    font-family: 'Times New Roman', Times, serif;
+    color: #9457eb;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 85px;
+    font-size: 17px;
+    width: 25%;
+}
+.topNav a:hover, .offcanvas a:focus{
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    transition: bold 0.4s;
+    transition: color 0.4s;
+}
+.topNav a.active{
+    color: #dcd0ff;
+    font-weight: bold;
+}
+
+.welcome{
+    color: #9457eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    text-align: center; 
+    font-weight: bold;
+    position: absolute;
+    align-self: center;
+    top: 375px;
+}
+
+.shortDef{
+    color: rgb(200, 200, 200);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    position: absolute;
+    align-self: center;
+    top: 460px;
+}
+
+.aboutbox{
+    align-self: center;
+    position: relative;
+    height: 750px;
+    width: 70%;
+}
+.aboutbox .picbox{
+    width: 50%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+.aboutbox h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    line-height: 2;
+    position: c;
+    right: 0;
+    top: 12%;
+    font-weight: 300;
+    border-bottom: #3b3c36 solid .50px;
+
+}
+.aboutbox h2{
+    color: rgb(200, 200, 200);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 2;
+    text-align: right;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 26%;
+    font-weight: 300;
+}
+
+.call2action{
+    align-self: center;
+    position: relative;
+    height: 950px;
+    width: 70%;
+}
+.call2action p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    width: 100px;
+    
+}
+.call2action .picbox{
+    width: 75%;
+    height: 28%;
+    background-color: grey;
+    position: absolute;
+    right: 0;
+    top: 47px;
+}
+.c2a{
+    border-bottom: #3b3c36 solid .50px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 250px;
+    width: 30;
+}
+.c2a a{
+    color: #2e8b57;
+    text-align: center;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.4s;
+}
+.c2a a:hover, .offcanvas a:focus{
+    color: #9aca9a;
+    /*font-weight: bold;
+    transform: translate(0, -2px);*/
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: #3b3c36; 
+    color: rgb(200, 200, 200); 
+    cursor: pointer; 
+    padding: 10px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%; 
+    font-size: 15px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #707167; 
+  }
+
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+}
+@media screen and (max-height: 450px){
+    .sidenav{padding-top: 15px;}
+    .sidenav a{font-size: 18px;}
+}
