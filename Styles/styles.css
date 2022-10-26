@@ -27,7 +27,7 @@ div{
 }
 
 /*top navigation*/
-.topNav{
+#topNav{
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@ div{
     z-index: 99;
     transition: top 0.4s;
 }
-.topNav .topNavBorder{
+.topNavBorder{
     position : absolute;
     width: 75%;
     top: 45px;
@@ -45,7 +45,7 @@ div{
     height: .75px;
     border-bottom: #3b3c36 solid .50px;
 }
-.topNav a{
+#topNav a{
     font-family: 'Times New Roman', Times, serif;
     color: #9457eb;
     text-decoration: none;
@@ -56,13 +56,13 @@ div{
     font-size: 17px;
     width: 25%;
 }
-.topNav a:hover, .offcanvas a:focus{
+#topNav a:hover, .offcanvas a:focus{
     color: rgb(230, 230, 230);
     font-weight: bold;
     transition: bold 0.4s;
     transition: color 0.4s;
 }
-.topNav a.active{
+#topNav a.active{
     color: #dcd0ff;
     font-weight: bold;
 }
@@ -169,28 +169,6 @@ div{
     /*font-weight: bold;
     transform: translate(0, -2px);*/
 }
-
-#myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99;
-    border: none; 
-    outline: none; 
-    background-color: #3b3c36; 
-    color: rgb(200, 200, 200); 
-    cursor: pointer; 
-    padding: 10px; 
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50%; 
-    font-size: 15px; 
-  }
-  
-  #myBtn:hover {
-    background-color: #707167; 
-  }
 
 #main{
     transition: margin-left .5s;
