@@ -70,6 +70,13 @@ div{
     font-weight: bold;
 }
 
+.welcomebox{
+    align-self: center;
+    position: relative;
+    height: 750px;
+    width: 70%;
+    align-items: center;
+}
 .welcome{
     color: #9457eb;
     font-family: 'Times New Roman', Times, serif;
@@ -78,16 +85,17 @@ div{
     font-weight: bold;
     position: absolute;
     align-self: center;
-    top: 375px;
+    top: 200px;
+    left: 35%;
 }
-
 .shortDef{
     color: rgb(200, 200, 200);
     font-family: 'Times New Roman', Times, serif;
     font-size: 120%;
     position: absolute;
     align-self: center;
-    top: 460px;
+    top: 280px;
+    left: 32.5%;
 }
 
 #aboutbox{
