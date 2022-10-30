@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://kit.fontawesome.com/70901a35b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
   </head>
 
   <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+<body>
+  <div id="circle"></div>
+</body>
 
   <title>Patrick · Developer</title>
 
@@ -12,6 +17,7 @@
     <div id="topNav" class="topNav">
       <a class="active" href="index.html">HOME</a>
       <a href="#aboutbox">ABOUT</a>
+      <a href="#call2action">CONTACT</a>
       <a href="https://github.com/pathill1">PROJECTS</a>
       <div class="topNavBorder"></div>
     </div>
@@ -20,7 +26,6 @@
       <div class="welcomebox">
       <div class="welcome">welcome.</div>
       <div class="shortDef">My name is Patrick, and I am a Web Developer.</div>
-      <i class="fa-brands fa-github" style="color: white;"></i>
     </div>
     </section>
 
@@ -40,9 +45,16 @@
     </section>
 
     <section class="hidden">
-      <div class="call2action">
+      <div id="call2action">
         <p>Lets work together.</p>
-          <div class="c2a"><a href="contact.html">CONTACT</a></div>
+        <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn">CONTACT</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"><span class="github"></span></a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
           <div class="picbox"></div>
     </section>
   </div>

@@ -1,17 +1,26 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-color: rgb(6, 6, 6);
-}
 section{
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
 }
+body{
+    background-color: rgb(6, 6, 6);
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
 div{
     color: black;
+    position:absolute;
+    /*transform:translate(-50%,-50%);*/
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:2px solid white;
 }
 .site{
     color: transparent;
@@ -55,19 +64,15 @@ div{
     float: left;
     text-align: center;
     padding: 14px 16px;
-    padding-left: 85px;
+    padding-left: 117px;
     font-size: 17px;
-    width: 25%;
+    width: 15%;
 }
 #topNav a:hover, .offcanvas a:focus{
     color: rgb(230, 230, 230);
     font-weight: bold;
     transition: bold 0.4s;
     transition: color 0.4s;
-}
-#topNav a.active{
-    color: #dcd0ff;
-    font-weight: bold;
 }
 
 .welcomebox{
@@ -85,7 +90,7 @@ div{
     font-weight: bold;
     position: absolute;
     align-self: center;
-    top: 200px;
+    top: 250px;
     left: 35%;
 }
 .shortDef{
@@ -94,7 +99,7 @@ div{
     font-size: 120%;
     position: absolute;
     align-self: center;
-    top: 280px;
+    top: 330px;
     left: 32.5%;
 }
 
@@ -137,20 +142,20 @@ div{
     font-weight: 300;
 }
 
-.call2action{
+#call2action{
     align-self: center;
     position: relative;
     height: 950px;
     width: 70%;
 }
-.call2action p{
+#call2action p{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     width: 100px;
     
 }
-.call2action .picbox{
+#call2action .picbox{
     width: 75%;
     height: 28%;
     background-color: grey;
@@ -158,28 +163,65 @@ div{
     right: 0;
     top: 47px;
 }
-.c2a{
-    border-bottom: #3b3c36 solid .50px;
-    padding: 10px;
-    border-radius: 2px;
+
+.dropbtn {
     background-color: transparent;
+    color: #2e8b57;
+    padding: 16px;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    border-bottom: #3b3c36 solid .50px;
+    font-family: 'Times New Roman', Times, serif;
     position: absolute;
     left: 0;
-    top: 250px;
+    top: -35px;
     width: 30;
+    transition-duration: .25s;
 }
-.c2a a{
-    color: #2e8b57;
-    text-align: center;
-    text-decoration: none;
-    font-size: 27px;
-    transition: 0.4s;
-}
-.c2a a:hover, .offcanvas a:focus{
+  
+.dropbtn:hover, .dropbtn:focus {
     color: #9aca9a;
-    /*font-weight: bold;
-    transform: translate(0, -2px);*/
 }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.showbtn {
+    display:block;
+}
+
+.github::before{
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 30px;
+    color: #2e8b57;
+    align-self: center;
+}
+
+/* Either show all links with icons or use grey box to show links with cool animation*/
 
 #main{
     transition: margin-left .5s;
