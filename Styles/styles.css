@@ -15,12 +15,15 @@ body{
 }
 div{
     color: black;
+}
+#circle{
     position:absolute;
-    /*transform:translate(-50%,-50%);*/
-    height:35px;
-    width:35px;
+    transform:translate(-50%,-50%);
+    height:30px;
+    width:30px;
     border-radius:50%;
     border:2px solid white;
+    z-index: 100;
 }
 .site{
     color: transparent;
@@ -75,7 +78,7 @@ div{
     transition: color 0.4s;
 }
 
-.welcomebox{
+#welcomebox{
     align-self: center;
     position: relative;
     height: 750px;
