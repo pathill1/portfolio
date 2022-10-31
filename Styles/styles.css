@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 section{
     display: grid;
@@ -24,6 +25,7 @@ div{
     border-radius:50%;
     border:2px solid white;
     z-index: 100;
+    pointer-events: none;
 }
 .site{
     color: transparent;
@@ -111,6 +113,7 @@ div{
     position: relative;
     height: 750px;
     width: 70%;
+    top: 50px;
 }
 #aboutbox .picbox{
     width: 50%;
@@ -150,6 +153,8 @@ div{
     position: relative;
     height: 950px;
     width: 70%;
+    top: 75px;
+    padding-top: 100px;
 }
 #call2action p{
     color: white;
@@ -164,7 +169,29 @@ div{
     background-color: grey;
     position: absolute;
     right: 0;
-    top: 47px;
+    top: 147px;
+}
+.c2a{
+    border-bottom: #3b3c36 solid .50px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 30;
+}
+.c2a a{
+    color: #2e8b57;
+    text-align: center;
+    text-decoration: none;
+    font-size: 27px;
+    transition: 0.4s;
+}
+.c2a a:hover, .offcanvas a:focus{
+    color: #9aca9a;
+    /*font-weight: bold;
+    transform: translate(0, -2px);*/
 }
 
 .dropbtn {
