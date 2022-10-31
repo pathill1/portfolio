@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    cursor: url("Images/whiteCursor.png"), auto;
 }
 section{
     display: grid;
@@ -54,14 +53,6 @@ div{
     overflow: hidden;
     z-index: 99;
     transition: top 0.4s;
-}
-.topNavBorder{
-    position : absolute;
-    width: 75%;
-    top: 45px;
-    left: 11.5%;
-    height: .75px;
-    border-bottom: #3b3c36 solid .50px;
 }
 #topNav a{
     font-family: 'Times New Roman', Times, serif;
@@ -190,9 +181,7 @@ div{
     transition: 0.4s;
 }
 .c2a a:hover, .offcanvas a:focus{
-    color: #9aca9a;
-    /*font-weight: bold;
-    transform: translate(0, -2px);*/
+    color: rgb(230, 230, 230);
 }
 
 .dropbtn {
