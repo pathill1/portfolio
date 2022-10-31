@@ -1,6 +1,7 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: url("Images/whiteCursor.png"), auto;
 }
 section{
     display: grid;
