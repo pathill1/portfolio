@@ -243,13 +243,22 @@ div{
 
 /* Either show all links with icons or use grey box to show links with cool animation*/
 
+@keyframes pop
+{
+  0%
+    {
+    opacity:0;
+    }
+  100%
+    {
+        opacity:1;
+    }
+}
+
 #main{
     transition: margin-left .5s;
     padding: 16px;
     position: absolute;
     top: 0;
 }
-@media screen and (max-height: 450px){
-    .sidenav{padding-top: 15px;}
-    .sidenav a{font-size: 18px;}
-}
+
